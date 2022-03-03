@@ -1,6 +1,9 @@
 ---
 - hosts: dev
   become: True
+  user: 
+    name:ubuntu
+    password:ubuntu
   tasks:
     - name: Install python pip
       yum:
