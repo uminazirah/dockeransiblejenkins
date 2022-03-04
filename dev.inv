@@ -1,2 +1,2 @@
 [webserver]
-10.0.2.5 ansible_user=ubuntu ansible_host=ubuntu
+ubuntu ansible_user=ubuntu ansible_host=10.0.2.5 
