@@ -1,5 +1,5 @@
 ---
-- hosts: all
+- host: webserver
   become: True
   tasks:
     - name: Install python pip
