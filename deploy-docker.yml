@@ -1,5 +1,5 @@
 ---
-- hosts: ubuntu
+- hosts: webserver
   become: True
   tasks:
     - name: Install python pip
