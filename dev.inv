@@ -1,2 +1,2 @@
 [webserver]
-ubuntu ansible_host=10.0.2.5 
+ansible_host=10.0.2.5 
