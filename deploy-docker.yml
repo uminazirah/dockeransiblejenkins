@@ -16,7 +16,7 @@
         state: present
     - name: start docker
       service:
-        name: docker
+        name: snap.docker.dockerd
         state: started
         enabled: yes
     - name: Start the container
