@@ -1,2 +1,2 @@
 [ubuntu]
-ubuntu ansible_ssh_host=10.0.2.5
+ubuntu 10.0.2.5
