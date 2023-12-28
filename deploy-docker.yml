@@ -13,6 +13,7 @@
     - name: Install docker-py python module
       pip:
         name: docker-py
+        executable: pip
         state: present
     - name: start docker
       service:
