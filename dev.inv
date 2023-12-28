@@ -1,2 +1,2 @@
-[webserver]
-10.0.2.5 ansible_user=ubuntu
+[dev]
+10.0.2.4 ansible_user=osboxes
