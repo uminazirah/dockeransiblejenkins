@@ -3,23 +3,22 @@
   become: True
   tasks:
     - name: Install python pip
-      yum:
+      apt:
         name: python-pip
         state: present
     - name: Install docker
-      yum:
+      apt:
         name: docker
         state: present
+    - name: start docker   
+      service:
+        name: docker
+        state: started
+        enabled: yes
     - name: Install docker-py python module
       pip:
         name: docker-py
-        executable: pip
         state: present
-    - name: start docker
-      service:
-        name: snap.docker.dockerd
-        state: started
-        enabled: yes
     - name: Start the container
       docker_container:
         name: hariapp
