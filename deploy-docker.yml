@@ -23,10 +23,6 @@
         name: docker-py
         state: present
 
-    - name: Debug DOCKER_TAG
-      debug:
-        var: DOCKER_TAG
-
     - name: Start the container
       docker_container:
         name: hariapp
