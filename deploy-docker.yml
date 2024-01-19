@@ -20,6 +20,11 @@
         name: docker-py
         state: present
     - name: Start the container
+      tasks:
+        name: Debug DOCKER_TAG
+        debug:
+        var: DOCKER_TAG
+    - name: Start the container
       docker_container:
         name: hariapp
         image: "uminazirah/hariapp:{{DOCKER_TAG}}"
