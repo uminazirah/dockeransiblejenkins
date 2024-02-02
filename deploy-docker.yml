@@ -29,4 +29,4 @@
         image: "uminazirah/hariapp:{{DOCKER_TAG}}"
         state: started
         published_ports:
-          - 0.0.0.0:8081:8080
+          - 0.0.0.0:8084:8080
